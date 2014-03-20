@@ -11,3 +11,28 @@
  *= require_self
  *= require_tree .
  */
+ 
+body
+{
+background-color: #f6f6f6;
+width: 60%;
+min-width:640px;
+}
+
+body, #title_blog, #main_menu, nav table
+{
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#title_blog
+{
+text-align: center;
+}
+
+#main_menu
+{
+background-color: #a3dfff;
+margin-right: 0px;
+margin-left: 0px
+}

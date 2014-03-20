@@ -1,3 +1,44 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#postlist, #newpost, #showpost
+{
+min-width: 630px;
+border: 1px solid black;
+padding: 5px;
+}
+
+#postlist h1, #newpost h1, #showpost h1
+{
+text-align: center;
+}
+
+#postlist nav
+{
+background-color: #a3dfdd;
+margin: auto;
+}
+#postlist nav h3
+{
+text-align: center;
+}
+
+#postlist article, #newpost article, #showpost article
+{
+min-width: 620px;
+border: 1px solid black;
+border-radius: 15px;
+padding: 5px;
+text-align: justify;
+}
+
+#postlist article p, #showpost article
+{
+background-color: white;
+}
+
+#postlist article em
+{
+float: right;
+}

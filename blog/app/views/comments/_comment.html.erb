@@ -1,14 +1,12 @@
-<p>
-	<strong>Commenter:</strong>
-	<%= comment.commenter %>
-</p>
-<p>
-	<strong>Comment:</strong>
-	<%= comment.body %>
-</p>
-<p>
-	<%= link_to "Delete this comment", [comment.post, comment],
-		method: :delete, data: {
-			confirm: "Are you sure to delete this comment?"
-		} %>
-</p>
+<article class="comment">
+	<h4>From <em><%= comment.commenter %></em></h4>
+	<p>
+		<%= comment.body %>
+	</p>
+	<aside>
+		<%= link_to "Delete this comment", [comment.post, comment],
+			method: :delete, data: {
+				confirm: "Are you sure to delete this comment?"
+			} %>
+	</aside>
+</article>

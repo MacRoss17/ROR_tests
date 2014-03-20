@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<main>
+	<h1 id="title_blog">Blog Attempt</h1>
+	<nav id="main_menu">
+		<table>
+			<tr>
+				<td><%= link_to "Home", controller: "welcome" %></td>
+				<td><%= link_to "My Blog", controller: "posts" %></td>
+			</tr>
+		</table>
+	</nav>
+	
+	<%= yield %>
+</main>	
 </body>
 </html>
